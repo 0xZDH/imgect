@@ -15,11 +15,15 @@ The injected shellcode can be extracted from the image by collecting all data be
 
 During execution, imgect will output the offset of the payload within the file.
 
-This tool is based on the following work:
+This tool is essentially a Python port of the following work:
 * https://github.com/chinarulezzz/pixload/blob/master/bmp.pl
+* https://github.com/chinarulezzz/pixload/blob/master/gif.pl
+
+This tool is also heavily based on the following work:
 * https://github.com/Urinx/SomeCodes/blob/master/Python/others/bmp-js-injector.py
 * https://github.com/jhaddix/scripts/blob/master/gif_header_xss.py
 
+The reason for this tool is to provide another quick Python solution to inject shellcode into a BMP/GIF image without corrupting it that will also allow basic encoding of the data being injected.
 
 ## Usage
 
